@@ -1,6 +1,8 @@
 ﻿module Logic
 
+
 exception FromCharException of string
+
 
 type UnaryOperator = 
     | Not
@@ -11,9 +13,9 @@ type UnaryOperator =
     static member FromChar (str: char) =
         match str with
         | '!' -> Not
-        | _ -> raise (FromCharException "Fuck")
+        | _ -> raise (FromCharException "Error while loading unary from char")
 
-    member this.apply = not
+    member this.Apply = not
    
 
 type BinaryOperator = 
@@ -41,7 +43,7 @@ type BinaryOperator =
         | '>' -> ImplicationLeftToRight
         | '<' -> ImplicationRightToLeft
         | '=' -> Equivalence
-        | _ -> raise (FromCharException "Fuck")
+        | _ -> raise (FromCharException "Error while loading binary from char")
     
     member this.Apply = 
         let implies p q = (not p) || q
@@ -71,6 +73,6 @@ type Expression =
         match this with
         | Value x -> x
         | Variable x -> variables.[x]
-        | Unary (o, e) -> o.apply(e.Apply(variables))
+        | Unary (o, e) -> o.Apply(e.Apply(variables))
         | Binary (l, o, r) -> o.Apply (l.Apply(variables)) (r.Apply(variables))
 

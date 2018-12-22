@@ -1,8 +1,10 @@
 namespace Test
 
+
 open System
 open Microsoft.VisualStudio.TestTools.UnitTesting
 open Logic
+
 
 [<TestClass>]
 type LogicTests () =
@@ -34,3 +36,4 @@ type LogicTests () =
         let variables = Map.ofList [ 'X', true ; 'Y', true ; 'Z', false]
 
         Assert.IsFalse(expr.Apply(variables));
+
