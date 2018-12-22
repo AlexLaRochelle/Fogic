@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Fogic", "Fogic\Fogic.fsproj", "{21482D65-AD0B-450D-8C97-E6772255E0C0}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Test", "Test\Test.fsproj", "{2F1310E2-D88B-4A9C-879E-CAE8E1485878}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21482D65-AD0B-450D-8C97-E6772255E0C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21482D65-AD0B-450D-8C97-E6772255E0C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21482D65-AD0B-450D-8C97-E6772255E0C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21482D65-AD0B-450D-8C97-E6772255E0C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F1310E2-D88B-4A9C-879E-CAE8E1485878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F1310E2-D88B-4A9C-879E-CAE8E1485878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F1310E2-D88B-4A9C-879E-CAE8E1485878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F1310E2-D88B-4A9C-879E-CAE8E1485878}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {99E745FA-791C-4869-9C09-B1A40FC8C270}
+	EndGlobalSection
+EndGlobal
